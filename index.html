@@ -2,14 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background: #f4f4f9; color: #333; }
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 40px; 
+            background: #f4f4f9; 
+            color: #333; 
+        }
         h1 { color: #2c3e50; }
+        .projects { 
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+            flex-wrap: wrap; 
+            margin-top: 30px; 
+        }
+        .card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            width: 280px; 
+            text-align: left; 
+        }
+        .card h3 { margin-top: 0; color: #2c3e50; }
+        .card a { 
+            display: inline-block; 
+            margin-top: 15px; 
+            color: #3498db; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        .card a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Hello, I'm a Developer</h1>
-    <p>Welcome to my portfolio website!</p>
+
+    <h1>Hello, I'm a Data Analyst and an ML Engineer</h1>
+    <p>Welcome to my personal portfolio website.</p>
+
+    <h2>My Projects</h2>
+    <div class="projects">
+        
+        <!-- Project 1 -->
+        <div class="card">
+            <h3>Spotify Song Analysis</h3>
+            <p>Analyzing the most popular songs on Spotify across different genres.</p>
+            <a href="https://github.com/Hewhoshouldnotbenamed/SpotifySongDataAnalysis" target="_blank">View on GitHub &rarr;</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+            <h3> Chess Game Study Recommender</h3>/h3>
+            <p>A chess game recommender system for players of different levels to improve their gameplay.</p>
+            <a>"https://github.com/Hewhoshouldnotbenamed/ChessGameRecommender" target="_blank">View on GitHub &rarr;</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
